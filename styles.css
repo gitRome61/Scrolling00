@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(images/pippo0.jpg);
+  }
+
+  20% {
+    background-image: url(images/pippo1.jpg);
+  }
+
+  40% {
+    background-image: url(images/pippo2.jpg);
+  }
+
+  60% {
+    background-image: url(images/pippo3.jpg);
+  }
+
+  80% {
+    background-image: url(images/pippo4.jpg);
+  }
+
+  100% {
+    background-image: url(images/pippo5.jpg);
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 255, 0.4);
+  border-top: solid 2px red;
+  border-bottom: solid 2px red;
+}
+
+#scrollBox {
+  overflow: hidden;
+  line-height: 3rem;
+  text-align: center;
+
+}
+
+#scrollContent {
+  white-space: nowrap;
+  position: relative;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  right: 0;
+  color: rgb(255, 255, 255);
+}
+
+/*
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-129%);
+  }
+}
+
+.scrolling-text p {
+  animation: scroll 30s linear infinite;
+}*/
